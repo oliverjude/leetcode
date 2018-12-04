@@ -26,6 +26,7 @@ public class ArraySort implements Runnable {
         try {
             Thread.sleep(this.number);
             System.out.println(this.number);
+            System.out.println("test");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
