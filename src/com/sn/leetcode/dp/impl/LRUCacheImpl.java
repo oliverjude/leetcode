@@ -1,4 +1,4 @@
-package com.sn.leetcode.dp;
+package com.sn.leetcode.dp.impl;
 
 import com.sn.leetcode.dp.intf.LRUCache;
 

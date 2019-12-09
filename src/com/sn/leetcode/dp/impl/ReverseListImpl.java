@@ -1,9 +1,7 @@
-package com.sn.leetcode.dp;
+package com.sn.leetcode.dp.impl;
 
 import com.sn.leetcode.dp.common.ListNode;
 import com.sn.leetcode.dp.intf.ReverseList;
-
-import java.util.List;
 
 /**
  * @author 18073758

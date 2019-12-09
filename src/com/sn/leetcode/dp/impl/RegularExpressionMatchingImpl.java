@@ -1,4 +1,4 @@
-package com.sn.leetcode.dp;
+package com.sn.leetcode.dp.impl;
 
 import com.sn.leetcode.dp.intf.RegularExpressionMatching;
 
@@ -14,7 +14,7 @@ public class RegularExpressionMatchingImpl implements RegularExpressionMatching 
 
 
     @Override
-    public  boolean isMatch(String s, String p) {
+    public boolean isMatch(String s, String p) {
 
         if (s == null && p == null) {
             return true;
@@ -48,12 +48,35 @@ public class RegularExpressionMatchingImpl implements RegularExpressionMatching 
         int i = sa.length, j = pa.length;
         boolean[] ack = new boolean[sa.length];
         while (i != 0) {
-         if(pa[j-1]=='*') {
+            if (pa[j - 1] == '*') {
 
-         }
+            }
         }
         return false;
 
     }
 
+    public interface RegularExpressionMatching{
+
+        boolean isMatch(String s ,String p);
+
+        class RegularExpressionMatchingImplTest implements RegularExpressionMatching{
+            @Override
+            public boolean isMatch(String s, String p) {
+                System.out.println("ub");
+                return false;
+            }
+
+            public static void main(String[] args) {
+                RegularExpressionMatchingImplTest regularExpressionMatchingImplTest = new
+                        RegularExpressionMatchingImplTest();
+                regularExpressionMatchingImplTest.isMatch("s","s");
+            }
+        }
+
+
+    }
 }
+
+
+

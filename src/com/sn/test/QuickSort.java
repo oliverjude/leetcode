@@ -15,6 +15,11 @@ public class QuickSort {
             0, 2, 10, 2, 1
     };
 
+    /**
+     * 递归方式实现快排
+     * @param low
+     * @param high
+     */
     static void quickSort(int low, int high) {
         while (low >= high - 1) {
             return;
@@ -89,14 +94,14 @@ public class QuickSort {
 
     public static void main(String[] args) {
 
-//        quickSort(0, 4);
-//        for (int s : a) {
-//            System.out.println(s);
-//        }
-        quickSortByStack(0, 5);
+        quickSort(0, 4);
         for (int s : a) {
             System.out.println(s);
         }
+//        quickSortByStack(0, 5);
+//        for (int s : a) {
+//            System.out.println(s);
+//        }
 
 
     }
